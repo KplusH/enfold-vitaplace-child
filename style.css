@@ -1,0 +1,349 @@
+/*
+ Theme Name:    enfold vitaplace child
+ Template:      enfold
+ Version: 		1.0.1
+*/
+
+
+
+
+/*  ////  Head  ////    ////  */
+
+/* Schrift / Logo im Header */
+
+/* Code im Backend
+<span class="logo-vitaplace"><span class="logo-vitaplace-text">Vitaplace Deutschland  </span><span class="icon-deutsche-apotheke-icon"></span><span class="logo-vitaplace-text">  Vitaplace Schweiz  </span><span class="icon-schweizer-apotheke-icon"></span></span>
+*/
+
+#header_meta { display: none; }
+#header_contact {line-height: 30px;margin-top: 5px;}
+a.extraLink{
+	color:#706f6f!important;
+}
+a.extraLink:hover,a.extraLink:focus{
+	text-decoration:none!important;
+}
+ a.extraLink .selected{
+	background: #e7edce!important;
+}
+.icon-deutsche-apotheke-icon, .icon-schweizer-apotheke-icon { font-size: 30px; position: relative; top: 8px; color: #cc071e; }
+.icon-schweizer-apotheke-icon { color: #009534; }
+
+.logo-vitaplace {
+    font-size: 13px; 
+	font-weight: 200; 
+	color: #929395; 
+    padding-right: 5px; 
+	padding-left: 15px;
+		position: relative;
+	display:table;
+
+}
+.logo-vitaplace-text {
+	margin-left: 21px;}
+
+.av-logo-container {padding-top: 10px;}
+#text-logo{
+color: #abc541;
+font-size: 11px;
+line-height: 16px;
+float: left;
+margin-top: 47px;
+margin-left: 12px;
+}
+.service-phone {
+	white-space: nowrap; color: #abc541;
+	margin-left: 6px;
+	line-height:20px;
+}
+
+#header_contact {
+	color: #00a5eb;
+float:right;
+	margin-top: 20px;
+height: 70px;
+}
+
+.logo-vitaplace__de {
+	position: relative;
+    top: -20px;
+	display:table-cell;
+}
+.logo-vitaplace__ch {
+	position: relative;
+    top: -20px;
+	display:table-cell;
+}
+.logo-vitaplace__de .service-phone,.logo-vitaplace__ch .service-phone{
+float:right;
+	margin-top:13px;
+}
+@media (max-width: 1170px) {
+	.logo-vitaplace-text {display: none;}
+	.icon-schweizer-apotheke-icon {margin-left: 21px;}
+} 
+
+@media (max-width: 1024px) { 
+	#slogan { display: none; }
+	
+}
+
+@media (max-width: 989px) { 
+#text-logo{
+
+margin-top: -10px;
+margin-bottom: 10px;
+}
+	.logo-vitaplace--DE > .logo-vitaplace__ch {display: none;}
+	.logo-vitaplace--CH > .logo-vitaplace__de {display: none;}
+
+	.responsive .logo > a > img, .logo > a > img { width: 162px; display: block; margin-top: 12px; }
+	
+	#header_contact {
+		position: absolute; right: 112px; top: 11px;
+	}
+	
+	.avia-menu.av_menu_icon_beside {
+		border: none;
+	}
+	
+	.responsive.html_mobile_menu_tablet #top #header_main > .container .main_menu .av-main-nav > li > a, .responsive.html_mobile_menu_tablet #top #wrap_all .av-logo-container {
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 767px) { 
+	#header_contact { display: none; }
+	
+	.responsive.html_mobile_menu_tablet #top #header_main > .container .main_menu .av-main-nav > li > a, .responsive.html_mobile_menu_tablet #top #wrap_all .av-logo-container {
+		line-height: 90px;
+	}
+}
+
+
+
+
+/*  ////  Hauptmenü   ////   ////    */
+
+
+#header_main_alternate .av-main-nav-wrap {
+    text-align: center;
+}
+
+#top #header_main_alternate {border-bottom: 4px solid #fff;}
+
+.av-main-nav-wrap #avia-menu {
+    display: inline-block;
+    width: auto!important;
+}
+
+#top .av-main-nav ul a {font-size: 15px; font-weight: 400;}
+
+#top #header_main .av-menu-button > a .avia-menu-text {
+    padding: 14px 14px 13.5px 14px;
+    border-radius: 0;
+}
+
+/*  mobile Menu    */
+
+.av-burger-overlay .av-width-submenu > a > .avia-menu-text {font-size: 25px;}
+
+.html_av-overlay-full #top #wrap_all #av-burger-menu-ul li li {font-size: 18px;}
+
+
+
+
+/*  //// Schrift  ////   ////    */
+
+h1 {
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+}
+
+.template-page .entry-content-wrapper h2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2 {letter-spacing: 0.03em}
+
+.h2-Linien {overflow: hidden;text-align: center;}
+.h2-Linien > h2 {position: relative;display: inline-block;}
+.h2-Linien > h2:before, .h2-Linien > h2:after {
+    content: ''; display: block; border-bottom: 1px solid #abc541;position: absolute; top: 50%; width: 1300px;
+}
+.h2-Linien > h2:before {left: -1315px;}
+.h2-Linien > h2:after {right: -1315px;}
+
+h4 {letter-spacing: 0.05em;}
+
+#top #footer .menu-item {
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+#top #footer h3.widgettitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* Startseite */
+
+
+#startseite-buttons .av_textblock_section p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.3em;
+}
+
+#top #wrap_all .all_colors .startseite-slider h2 {
+    color: #ffffff;
+    font-size: 46px;    
+	font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#top #wrap_all #schmaler-textblock-startseite .opener_startseite > h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 989px) { 
+    #top #wrap_all #schmaler-textblock-startseite .opener_startseite > h1 {font-size: 22px;} 
+    #top #wrap_all .all_colors h1 {font-size: 25px;}
+    .responsive #top .slideshow_caption h2 {
+        font-size: 30px!important; 
+        font-weight: bold!important;
+        text-transform: uppercase!important;
+        letter-spacing: 0.05em!important;
+    }
+}
+
+
+
+
+
+/* //// Content / Container ////   ////   */
+
+@media only screen and (min-width: 1024px) {
+#main .container .schmaler-text {padding: 0 160px;}
+#schmaler-textblock .container {padding: 0 160px;}
+#schmaler-textblock-startseite .container {padding: 0 180px;}
+}
+
+.container_wrap {border: 0;}
+
+
+
+/* Homoeopathie Seite */
+
+@media only screen and (min-width: 1024px) {
+    #main #schmales-grid {padding: 0 140px;}
+    #main #schmales-grid {padding: 0 140px;} 
+}
+
+
+@media only screen and (max-width: 767px) {
+    .responsive #top #wrap_all #schmales-grid .no_margin {padding: 0!important;}
+    #main #schmales-grid {padding: 0 100px;} 
+}
+
+
+/* Team Seite */
+
+.team-grid .column-top-margin {margin-top: 0;}
+#schmaler-textblock .entry-content-wrapper .team-text p {margin-top: -5px;}
+
+@media (min-width: 1025px) { 
+.av_two_third {margin-left: 15px!important;}
+}
+
+
+/* Startseite */
+
+#top #startseite-buttons .av-flex-placeholder {width: 10px;}
+#startseite-buttons .av_one_third {width: 33.33333%;}
+#startseite-buttons .av_one_half {width: 49.2%;}
+#startseite-buttons .start-2nd-half {margin-left: 10px;}
+#startseite-themen .av-flex-placeholder {width: 25px;}
+
+.bild-vergroessern img {width: 100%;}
+
+
+
+
+/*    ////  icons   ////    ////   */
+
+@font-face {
+    font-family: 'vitaplace';
+    src:  url('fonts/vitaplace.eot?n6ev5g');
+    src:  url('fonts/vitaplace.eot?n6ev5g#iefix') format('embedded-opentype'),
+    url('fonts/vitaplace.ttf?n6ev5g') format('truetype'),
+    url('fonts/vitaplace.woff?n6ev5g') format('woff'),
+    url('fonts/vitaplace.svg?n6ev5g#vitaplace') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'vitaplace' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-deutsche-apotheke-icon:before {
+    content: "\e900";
+}
+.icon-schweizer-apotheke-icon:before {
+    content: "\e901";
+}
+
+
+
+/*   ////  product grid   ////    ////   */
+
+
+#top #wrap_all .all_colors .template-page .entry-content-wrapper .vtp-categories h2.vtp-categories__head {color: transparent;}
+
+
+
+
+
+/*   ////  toggle   ////    ////   */
+
+.js_active .toggler {
+    border: none;
+    border-bottom: 1px solid #abc541;
+    margin-bottom: 1px;
+    font-weight: 500;
+    color: #abc541;
+}
+
+.main_color .toggle_content {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #abc541;
+}
+
+
+
+
+/*    ////  Footer   ////    ////   */
+
+#footer {padding: 0;}
