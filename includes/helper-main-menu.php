@@ -95,11 +95,6 @@ if( isset( $headerS['disabled'] ) )
         $icon_beside = " av_menu_icon_beside";
     }
 
-
-
-
-
-
     ?>
     <div  id='header_main' class='container_wrap container_wrap_logo'>
         <?php
@@ -132,7 +127,10 @@ if( isset( $headerS['disabled'] ) )
 		$output .='<span id="text-logo">' . $appClaim . '</span>';
         $output .= '<span id="header_contact">';
         $output .=   '<span class="logo-vitaplace logo-vitaplace--' . $vitaOptions['app_country_mode'] . '">';
-        $output .=      '<span class="logo-vitaplace__de"><span class="logo-vitaplace-text">Vitaplace Deutschland</span> <span class="icon-deutsche-apotheke-icon"></span> <span class="service-phone">' . preg_replace('/\;/', '<br>', $vitaOptions['app_de_service_phone']) . '</span></span>';    
+
+        if ($vitaOptions['app_country_mode'] === 'DE') {
+            $output .= '<span class="logo-vitaplace__de"><span class="logo-vitaplace-text">Vitaplace Deutschland</span> <span class="icon-deutsche-apotheke-icon"></span> <span class="service-phone">' . preg_replace('/\;/', '<br>', $vitaOptions['app_de_service_phone']) . '</span></span>';
+        }
         $output .=      '<span class="logo-vitaplace__ch"><span class="logo-vitaplace-text">Vitaplace Schweiz</span> <span class="icon-schweizer-apotheke-icon"></span> <span class="service-phone">' . preg_replace('/\;/', '<br>', $vitaOptions['app_ch_service_phone']) . '</span></span>';
         $output .=   '</span>';
         $output .= '</span>';
